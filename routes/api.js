@@ -8,7 +8,7 @@ var zahirr = db.get("zahirr");
 	console.log('')
 }
 
-var creatorList = ['@ITSMAZGH','@MyMans','@MeMans','@Mans', '@MansGanteng','@Mansstergantemg','@mansgantengbet', '@mans'];
+var creatorList = ['@FIKRIISKY','@MyMans','@MeMans','@Mans', '@MansGanteng','@Mansstergantemg','@mansgantengbet', '@mans'];
 var creator = creatorList[Math.floor(Math.random() * creatorList.length)];
 
 
@@ -163,7 +163,7 @@ var len = 15
 router.get('/find', async (req, res, next) => {
     var apikey = req.query.apikey
     if (!apikey) return res.json(loghandler.notparam)
-    if (apikey != 'Kuv-Api') return res.json(loghandler.invalidKey)
+    if (apikey != 'Fikapi') return res.json(loghandler.invalidKey)
 
     try {
         zahirr.find()
